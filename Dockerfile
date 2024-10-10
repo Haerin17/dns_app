@@ -2,8 +2,8 @@ FROM python:3.8-slim
 
 WORKDIR /app
 
-COPY user_server.py .
+COPY auth_server.py .
 
 RUN pip install flask
 
-CMD ["python", "user_server.py"]
+CMD ["python", "auth_server.py"]
